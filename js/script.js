@@ -15,3 +15,12 @@ const userFavoriteColor = prompt(
   `Ciao ${firstName} ${lastName} , qual è il tuo colore preferito? `
 );
 console.log(userFavoriteColor);
+
+// Ora con le informazioni che ho a disposizione, genero una password.
+
+// preparo il messaggio per il risultato
+const message = `${firstName}${lastName}${userFavoriteColor}21`;
+console.log(message);
+
+// prepariamo la stampa
+document.getElementById("user-password").innerHTML = message;
